@@ -1,0 +1,21 @@
+.texte {
+    color: #046FBC;
+}
+
+.bande {
+    background: #046FBC;
+    background: linear-gradient(90deg, rgba(4, 111, 188, 1) 0%, rgba(4, 111, 188, 1) 0%);
+    height: 3rem;
+}
+
+.bouton {
+    border: 2px
+}
+
+.texte:hover {
+    color: #046FBC;
+}
+
+i {
+    size: 100px;
+}
