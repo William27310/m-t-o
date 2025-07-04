@@ -15,6 +15,7 @@ fetch(url)
         document.getElementById("windgust").innerHTML += `${data.list[0].wind.gust}`
         document.getElementById("windspeed").innerHTML += `${data.list[0].wind.speed}`
 
+        // Prévision 5 jours
         // 05/07
         document.getElementById("05/07tempglobalmax").innerHTML += `${data.list[6].main.temp}°C`
         document.getElementById("05/07tempglobalmin").innerHTML += `${data.list[10].main.temp}°C`
@@ -34,4 +35,7 @@ fetch(url)
         // 09/07
         document.getElementById("09/07tempglobalmax").innerHTML += `${data.list[35].main.temp}°C`
         document.getElementById("09/07tempglobalmin").innerHTML += `${data.list[34].main.temp}°C`
+
+        // Plus de détails
+        
     })
