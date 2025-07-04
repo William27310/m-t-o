@@ -16,6 +16,7 @@
 
     <main class="container-fluid mt-2">
 
+        <!-- date & ville -->
         <div class="row">
             <div class="col fs-5 fw-bold" id="hour"><i class="bi bi-clock-fill"></i>
             </div>
@@ -23,30 +24,56 @@
             </div>
         </div>
 
-        <div class="col-auto text-start mt-4" id="weather"><i class="bi bi-cloud-fill"></i>
-        </div>
-
-
-        <div class="row mb-4 mt-4">
-            <div class="col-auto text-start" id="temp.min"><i class="bi bi-thermometer"></i>
+        <!-- température et temps -->
+        <div class="row mb-1 mt-4">
+            <div class="col fs-3" id="temp"><i class="bi bi-thermometer-half"></i>
             </div>
-            <div class="col-auto" id="temp"><i class="bi bi-thermometer-half"></i>
-            </div>
-            <div class="col-auto" id="temp.max"><i class="bi bi-thermometer-high"></i>
+            <div class="col-auto mt-2 mb-2" id="weather"><i class="bi bi-cloud-fill"></i>
             </div>
         </div>
 
-        <div class="text-start" id="humidity"><i class="bi bi-moisture"></i>
+        <!-- Conditions météorologique -->
+        <button type="button" class="border mb-4 btn text-white" data-bs-toggle="modal"
+            data-bs-target="#details">CM</button>
+
+        <div class="modal fade" id="details" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content text-white bg-dark">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Conditions météorologique</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body container-fluid">
+                        <div class="row">
+                            <p class="fw-bold col-auto">Humidité : </p>
+                            <div class="text-start col-auto" id="humidity"><i class="bi bi-moisture"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="mt-4 row">
+                            <p class="fw-bold col-auto">Vent : </p>
+                            <div class="col-auto" id="wind"><i class="bi bi-wind"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="fw-bold col-auto">Rafale de vent : </p>
+                            <div class="col-auto" id="windgust"><i class="bi bi-wind"></i><i class="bi bi-shuffle"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="fw-bold col-auto">Vitesse du vent : </p>
+                            <div class="col-auto" id="windspeed"><i class="bi bi-wind"></i><i
+                                    class="bi bi-skip-forward-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
-        <div class="row mt-4 mb-5">
-            <div class="col-auto" id="wind"><i class="bi bi-wind"></i>
-            </div>
-            <div class="col-auto" id="windgust"><i class="bi bi-wind"></i><i class="bi bi-shuffle"></i>
-            </div>
-            <div class="col-auto" id="windspeed"><i class="bi bi-wind"></i><i class="bi bi-skip-forward-fill"></i>
-            </div>
-        </div>
+
 
 
         <div class="card pb-4 opacity-75 bg-dark text-white">
@@ -84,7 +111,7 @@
                         <i class="bi bi-sun-fill fs-1 ms-4"></i>
                         <p class="mt-1 ms-3">Mardi</p>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"

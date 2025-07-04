@@ -7,8 +7,6 @@ fetch(url)
     .then(data => {
         console.log(data)
         document.getElementById("temp").innerHTML += `${data.list[0].main.temp}°C`
-        document.getElementById("temp.max").innerHTML += `${data.list[0].main.temp_max}°C`
-        document.getElementById("temp.min").innerHTML += `${data.list[0].main.temp_min}°C`
         document.getElementById("humidity").innerHTML += `${data.list[0].main.humidity}`
         document.getElementById("ville").innerHTML += `${data.city.name}`
         document.getElementById("hour").innerHTML += `${data.list[0].dt_txt}`
