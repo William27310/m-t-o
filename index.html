@@ -12,42 +12,97 @@
     <title>Document</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 text-white">
 
     <main class="border container-fluid">
 
         <div class="row">
-            <div id="hour">
+            <div class="col fs-5 fw-bold" id="hour"><i class="bi bi-clock-fill"></i>
             </div>
-            <div id="ville">
+            <div class="col-auto text-end fs-5 fw-bold" id="ville"><i class="bi bi-building-fill"></i>
             </div>
         </div>
 
-        <div id="temp.min">
+        <div class="col-auto text-start mt-4" id="weather"><i class="bi bi-cloud-fill"></i>
         </div>
-        <div id="temp">
+
+
+        <div class="row mb-4 mt-4">
+            <div class="col-auto text-start" id="temp.min"><i class="bi bi-thermometer"></i>
+            </div>
+            <div class="col-auto" id="temp"><i class="bi bi-thermometer-half"></i>
+            </div>
+            <div class="col-auto" id="temp.max"><i class="bi bi-thermometer-high"></i>
+            </div>
         </div>
-        <div id="temp.max">
+
+        <div class="text-start" id="humidity"><i class="bi bi-moisture"></i>
         </div>
-        <div id="humidity">
+
+        <div class="row mt-4 mb-5">
+            <div class="col-auto" id="wind"><i class="bi bi-wind"></i>
+            </div>
+            <div class="col-auto" id="windgust"><i class="bi bi-wind"></i><i class="bi bi-shuffle"></i>
+            </div>
+            <div class="col-auto" id="windspeed"><i class="bi bi-wind"></i><i class="bi bi-skip-forward-fill"></i>
+            </div>
         </div>
-        <div id="weather">
+
+
+        <div class="card pb-4 border border-warning opacity-50">
+            <div class="card-body">
+                <h5 class="card-title text-center">Prévisions sur 5 jours</h5>
+                <!-- température 05/07 -->
+                <div class="border border-danger row justify-content-around">
+                    <div class="col-auto">
+                        <div class="mt-5" id="05/07tempglobalmax"><i class="bi bi-thermometer-high"></i></div>
+                        <div id="05/07tempglobalmin"><i class="bi bi-thermometer"></i></div>
+                        <i class="bi bi-clouds-fill fs-1 ms-3 border"></i>
+                        <p class="ms-2 mt-1">Samedi</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="mt-5" id="06/07tempglobalmax"><i class="bi bi-thermometer-high"></i></div>
+                        <div id="06/07tempglobalmin"><i class="bi bi-thermometer"></i></div>
+                        <i class="bi bi-cloud-rain-heavy-fill fs-1 ms-3 border"></i>
+                        <p class="mt-1">Dimanche</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="mt-5" id="07/07tempglobalmax"><i class="bi bi-thermometer-high"></i></div>
+                        <div id="07/07tempglobalmin"><i class="bi bi-thermometer"></i></div>
+                        <i class="bi bi-cloud-rain-heavy-fill fs-1 ms-4 border"></i>
+                        <p class="mt-1 ms-3">Lundi</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="mt-5" id="08/07tempglobalmax"><i class="bi bi-thermometer-high"></i></div>
+                        <div id="08/07tempglobalmin"><i class="bi bi-thermometer"></i></div>
+                        <i class="bi bi-cloud-sun-fill fs-1 ms-4 border"></i>
+                        <p class="mt-1 ms-3">Mardi</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="mt-5" id="09/07tempglobalmax"><i class="bi bi-thermometer-high"></i></div>
+                        <div id="09/07tempglobalmin"><i class="bi bi-thermometer"></i></div>
+                        <i class="bi bi-sun-fill fs-1 ms-4 border"></i>
+                        <p class="mt-1 ms-3">Mardi</p>
+                    </div>
+                </div>
+            </div>
+            <button class="pb-2 mt-3 ms-5 mx-5 rounded pt-1">gros con</button>
+
         </div>
-        <div id="wind">
-        </div>
-        <div id="windgust">
-        </div>
-        <div id="windspeed">
-        </div>
+
 
     </main>
 
+
     <footer class="mt-auto container-fluid pt-3">
         <div class="d-flex justify-content-around pb-3">
-            <button class="p-3 ms-1 rounded bg-dark text-white fw-lighter"><i class="bi bi-house-door"></i><br>home</button>
-            <button class="p-3 ms-1 rounded bg-dark text-white fw-lighter"><i class="bi bi-person-walking"></i><br>travel</button>
+            <button class="p-3 ms-1 rounded bg-dark text-white fw-lighter"><i
+                    class="bi bi-house-door"></i><br>home</button>
+            <button class="p-3 ms-1 rounded bg-dark text-white fw-lighter"><i
+                    class="bi bi-person-walking"></i><br>travel</button>
             <button class="p-3 ms-1 rounded bg-dark text-white fw-lighter"><i class="bi bi-map"></i><br>map</button>
-            <button class="p-3 ms-1 rounded bg-dark text-white fw-lighter"><i class="bi bi-person-fill"></i><br>hub</button>
+            <button class="p-3 ms-1 rounded bg-dark text-white fw-lighter"><i
+                    class="bi bi-person-fill"></i><br>hub</button>
         </div>
     </footer>
 

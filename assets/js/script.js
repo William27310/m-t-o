@@ -16,4 +16,24 @@ fetch(url)
         document.getElementById("wind").innerHTML += `${data.list[0].wind.deg}`
         document.getElementById("windgust").innerHTML += `${data.list[0].wind.gust}`
         document.getElementById("windspeed").innerHTML += `${data.list[0].wind.speed}`
+
+        // 05/07
+        document.getElementById("05/07tempglobalmax").innerHTML += `${data.list[6].main.temp}°C`
+        document.getElementById("05/07tempglobalmin").innerHTML += `${data.list[10].main.temp}°C`
+
+        // 06/07
+        document.getElementById("06/07tempglobalmax").innerHTML += `${data.list[18].main.temp}°C`
+        document.getElementById("06/07tempglobalmin").innerHTML += `${data.list[15].main.temp}°C`
+
+        //07/07
+        document.getElementById("07/07tempglobalmax").innerHTML += `${data.list[27].main.temp}°C`
+        document.getElementById("07/07tempglobalmin").innerHTML += `${data.list[22].main.temp}°C`
+
+        // 08/07
+        document.getElementById("08/07tempglobalmax").innerHTML += `${data.list[33].main.temp}°C`
+        document.getElementById("08/07tempglobalmin").innerHTML += `${data.list[30].main.temp}°C`
+
+        // 09/07
+        document.getElementById("09/07tempglobalmax").innerHTML += `${data.list[35].main.temp}°C`
+        document.getElementById("09/07tempglobalmin").innerHTML += `${data.list[34].main.temp}°C`
     })
