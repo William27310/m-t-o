@@ -33,9 +33,38 @@ fetch(url)
         document.getElementById("08/07tempglobalmin").innerHTML += `${data.list[30].main.temp}°C`
 
         // 09/07
-        document.getElementById("09/07tempglobalmax").innerHTML += `${data.list[35].main.temp}°C`
-        document.getElementById("09/07tempglobalmin").innerHTML += `${data.list[34].main.temp}°C`
+        document.getElementById("09/07tempglobalmax").innerHTML += `${data.list[34].main.temp}°C`
+        document.getElementById("09/07tempglobalmin").innerHTML += `${data.list[30].main.temp}°C`
 
         // Plus de détails
-        
+        document.getElementById("05/07temp0").innerHTML += `${data.list[0].main.temp}°C`
+        document.getElementById("05/07temp1").innerHTML += `${data.list[1].main.temp}°C`
+        document.getElementById("05/07temp2").innerHTML += `${data.list[2].main.temp}°C`
+        document.getElementById("05/07temp3").innerHTML += `${data.list[3].main.temp}°C`
+        document.getElementById("05/07temp4").innerHTML += `${data.list[4].main.temp}°C`
+
+        document.getElementById("06/07temp8").innerHTML += `${data.list[8].main.temp}°C`
+        document.getElementById("06/07temp9").innerHTML += `${data.list[9].main.temp}°C`
+        document.getElementById("06/07temp10").innerHTML += `${data.list[10].main.temp}°C`
+        document.getElementById("06/07temp11").innerHTML += `${data.list[11].main.temp}°C`
+        document.getElementById("06/07temp12").innerHTML += `${data.list[12].main.temp}°C`
+
+        document.getElementById("07/07temp16").innerHTML += `${data.list[16].main.temp}°C`
+        document.getElementById("07/07temp17").innerHTML += `${data.list[17].main.temp}°C`
+        document.getElementById("07/07temp18").innerHTML += `${data.list[18].main.temp}°C`
+        document.getElementById("07/07temp19").innerHTML += `${data.list[19].main.temp}°C`
+        document.getElementById("07/07temp20").innerHTML += `${data.list[20].main.temp}°C`
+
+        document.getElementById("08/07temp24").innerHTML += `${data.list[24].main.temp}°C`
+        document.getElementById("08/07temp25").innerHTML += `${data.list[25].main.temp}°C`
+        document.getElementById("08/07temp26").innerHTML += `${data.list[26].main.temp}°C`
+        document.getElementById("08/07temp27").innerHTML += `${data.list[27].main.temp}°C`
+        document.getElementById("08/07temp28").innerHTML += `${data.list[28].main.temp}°C`
+
+        document.getElementById("09/07temp32").innerHTML += `${data.list[32].main.temp}°C`
+        document.getElementById("09/07temp33").innerHTML += `${data.list[33].main.temp}°C`
+        document.getElementById("09/07temp34").innerHTML += `${data.list[34].main.temp}°C`
+        document.getElementById("09/07temp35").innerHTML += `${data.list[35].main.temp}°C`
+        document.getElementById("09/07temp36").innerHTML += `${data.list[36].main.temp}°C`
+
     })
